@@ -20,20 +20,79 @@
 			base.Dispose(disposing);
 		}
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			this.components = new System.ComponentModel.Container();
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
-		}
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            button1 = new Button();
+            listBox1 = new ListBox();
+            textBox1 = new TextBox();
+            button2 = new Button();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(39, 27);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 0;
+            button1.Text = "Enter";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += buttonShowInfo_Click;
+            // 
+            // listBox1
+            // 
+            listBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 19;
+            listBox1.Location = new Point(166, 88);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(587, 327);
+            listBox1.TabIndex = 2;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(166, 29);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(593, 27);
+            textBox1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(39, 97);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 3;
+            button2.Text = "Enter";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += buttonShowBookList_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(listBox1);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		#endregion
-	}
+        #endregion
+
+        private Button button1;
+        private ListBox listBox1;
+        private TextBox textBox1;
+        private Button button2;
+    }
 }
